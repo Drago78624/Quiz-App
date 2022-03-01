@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="tracking-wider relative">
+    <div class="time-up-overlay invisible transition-all absolute h-[100vh] w-full -top-[6%] bg-gradient-to-b from-gray-700 to-bransparent z-10">
+        <div class="results bg-gray-100 inline-block absolute top-[40%] left-[50%] -translate-x-[50%] p-10 rounded w-[350px] text-center">
+            <div class="score text-2xl">Your score is 2/5</div>
+        </div>
+    </div>
+  <div class="container mx-auto">
+      <div id="timer" class="timer border-2 border-purple-700 inline-block py-2 px-5 text-xl font-semibold rounded text-purple-700 bg-gray-100 fixed right-2 lg:right-[10%]">10:00</div>
+      <h1 class="text-center text-5xl lg:text-7xl lg:my-12 text-purple-700 my-6">Quiz</h1>
+  </div>
+  <main class="w-full bg-gradient-to-br from-purple-700 to-purple-500">
+    <div class="container mx-auto p-5">
+      <div class="mcq-1 my-10">
+          <p class="text-lg text-white lg:text-xl"><strong>Q1.</strong> Who invented JavaScript?</p>
+          <ul class="choices my-4 text-purple-300 lg:text-lg">
+              <li class="my-1">
+                  <input type="radio" name="choice1" id="choice1x1"><label class="ml-2" for="choice1x1">Douglas Crockford</label>
+              </li>
+              <li class="my-1">
+                <input type="radio" name="choice1" id="choice1x2" value="correctAns"><label class="ml-2" for="choice1x2">Brendan Eich</label>
+            </li>
+            <li class="my-1">
+                <input type="radio" name="choice1" id="choice1x3"><label class="ml-2" for="choice1x3">Sheryl Sandberg</label>
+            </li>
+          </ul>
+      </div>
+      <div class="mcq-2 my-10">
+        <p class="text-lg text-white lg:text-xl"><strong>Q2.</strong> Which one of these is a JavaScript package manager?</p>
+        <ul class="choices my-4 text-purple-300 lg:text-lg">
+            <li class="my-1">
+                <input type="radio" name="choice2" id="choice2x1" value="correctAns"><label class="ml-2" for="choice2x1">npm</label>
+            </li>
+            <li class="my-1">
+              <input type="radio" name="choice2" id="choice2x2"><label class="ml-2" for="choice2x2">Node.js</label>
+          </li>
+          <li class="my-1">
+              <input type="radio" name="choice2" id="choice2x3"><label class="ml-2" for="choice2x3">TypeScript</label>
+          </li>
+        </ul>
+    </div>
+    <div class="mcq-3 my-10">
+        <p class="text-lg text-white lg:text-xl"><strong>Q3.</strong> Which tool can you use to ensure code quality?</p>
+        <ul class="choices my-4 text-purple-300 lg:text-lg">
+            <li class="my-1">
+                <input type="radio" name="choice3" id="choice3x1"><label class="ml-2" for="choice3x1">Angular</label>
+            </li>
+            <li class="my-1">
+              <input type="radio" name="choice3" id="choice3x2"><label class="ml-2" for="choice3x2">jQuery</label>
+          </li>
+          <li class="my-1">
+              <input type="radio" name="choice3" id="choice3x3" value="correctAns"><label class="ml-2" for="choice3x3">ESLint</label>
+          </li>
+          <li class="my-1">
+              <input type="radio" name="choice3" id="choice3x4"><label class="ml-2" for="choice3x4">RequireJS</label>
+          </li>
+        </ul>
+    </div>
+    <div class="mcq-4 my-10">
+        <p class="text-lg text-white lg:text-xl"><strong>Q4.</strong> Inside which HTML element do we put the JavaScript?</p>
+        <ul class="choices my-4 text-purple-300 lg:text-lg">
+            <li class="my-1">
+                <input type="radio" name="choice4" id="choice4x1"><label class="ml-2" for="choice4x1">javascript</label>
+            </li>
+            <li class="my-1">
+              <input type="radio" name="choice4" id="choice4x2"><label class="ml-2" for="choice4x2">scripting</label>
+          </li>
+          <li class="my-1">
+              <input type="radio" name="choice4" id="choice4x3" value="correctAns"><label class="ml-2" for="choice4x3">script</label>
+          </li>
+          <li class="my-1">
+              <input type="radio" name="choice4" id="choice4x4"><label class="ml-2" for="choice4x4">js</label>
+          </li>
+        </ul>
+    </div>
+    <div class="mcq-5 my-10">
+        <p class="text-lg text-white lg:text-xl"><strong>Q5.</strong> The external JavaScript file must contain the script tag.</p>
+        <ul class="choices my-4 text-purple-300 lg:text-lg">
+            <li class="my-1">
+                <input type="radio" name="choice5" id="choice5x1"><label class="ml-2" for="choice5x1">True</label>
+            </li>
+            <li class="my-1">
+              <input type="radio" name="choice5" id="choice5x2" value="correctAns"><label class="ml-2" for="choice5x2">False</label>
+          </li>
+        </ul>
+    </div>
+    <button class="btn block mx-auto bg-gray-100 border-2 border-purple-700 text-purple-700 transition-all hover:bg-purple-700 hover:text-white hover:-translate-y-1 hover:shadow-md rounded py-2 px-4" id="submitBtn">Submit</button>
+    </div>
+  </main>
+
+  <script src="app.js"></scripting>
+</body>
+</html>
